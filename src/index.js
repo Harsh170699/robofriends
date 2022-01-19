@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import Card from './Card.js';                 // if there is no extension like ./App.css or js then it will consider js by default 
+import App from './containers/App.js';
+// import CardList from './CardList.js';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
+// import { robots } from './robots.js'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  // <div>
+  //   <Card id= {robots[0].id} name={robots[0].name} email= {robots[0].email} />
+  //   <Card id= {robots[1].id} name={robots[1].name} email= {robots[1].email}/>
+  //   <Card id= {robots[2].id} name={robots[2].name} email= {robots[2].email}/>
+  // </div>
+    // <CardList robots={robots}/> 
+    <App />,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
